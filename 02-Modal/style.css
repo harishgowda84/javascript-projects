@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  background: url("./images/furniture.jpg") center/cover no-repeat;
+}
+
+.banner-container,
+.modal-container {
+  border: 2px solid darkviolet;
+  width: 40vw;
+  max-width: 500px;
+  text-align: center;
+  padding: 4rem 1rem;
+  height: 35vh;
+}
+
+.banner-btn {
+  background-color: darkviolet;
+  padding: 0.8rem 3.5rem;
+  margin-top: 1rem;
+  border: none;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: -10;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-container {
+  position: relative;
+  background-color: white;
+  width: 50vw;
+  border: 1px solid darkblue;
+}
+
+.modal-open {
+  visibility: visible;
+  z-index: 10;
+}
+.modal-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0.5rem;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+}
