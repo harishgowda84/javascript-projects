@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  gap: 0.75rem;
+}
+.btn {
+  width: 8rem;
+  height: 2rem;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: 1px solid grey;
+  background-color: blueviolet;
+  color: white;
+}
+.jokes {
+  font-size: 1.2rem;
+}
