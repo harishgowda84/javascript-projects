@@ -1,0 +1,90 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.nav-center {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.menu-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.menu-items {
+  display: none;
+}
+
+.show-menu-items {
+  display: block;
+  transition: all 0.3s linear;
+}
+.title {
+  font-size: 2rem;
+}
+#title-name {
+  color: blue;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.menu-items a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+  transition: all 0.3s linear;
+}
+
+.menu-items a:hover {
+  background: lightslategray;
+  color: white;
+  padding-left: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-items-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .menu-items-list li {
+    list-style-type: none;
+  }
+
+  .menu-items-list a {
+    transition: none;
+  }
+
+  .menu-items-list a:hover {
+    background: transparent;
+    color: black;
+    padding-left: 1rem;
+  }
+
+  .nav-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo {
+    display: none;
+  }
+}
